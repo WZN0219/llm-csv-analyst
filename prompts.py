@@ -15,7 +15,7 @@ def get_initial_prompt(df_head, df_info):
 - 样本数据预览:
 {df_head}
 
-# ⚠️ 数据清洗思维指南 (Thinking Process)
+# 数据清洗思维指南 (Thinking Process)
 观察发现 'Sales' 和 'Rating' 列虽然是数值含义，但当前被识别为 Object/String 类型（可能包含 '$', '%', ',' 等符号）。
 **请不要直接开始计算，而是遵循以下“防御性编程”流程：**
 
