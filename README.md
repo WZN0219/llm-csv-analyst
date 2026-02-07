@@ -50,6 +50,12 @@ pip install -r requirements.txt
 ```ini
 # .env 文件内容
 DASHSCOPE_API_KEY=你的sk-密钥内容
+
+# 接口地址 (阿里云百炼兼容模式)
+DASHSCOPE_BASE_URL="[https://dashscope.aliyuncs.com/compatible-mode/v1](https://dashscope.aliyuncs.com/compatible-mode/v1)"
+
+# 模型选择 (可选: qwen-turbo, qwen-plus, qwen-max)
+LLM_MODEL="qwen-plus"
 ```
 
 ### 4. 启动 Agent
