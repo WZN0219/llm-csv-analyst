@@ -1,0 +1,6 @@
+pandas
+dashscope
+python-dotenv
+matplotlib
+seaborn
+tabulate
