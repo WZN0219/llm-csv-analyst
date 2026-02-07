@@ -19,6 +19,51 @@
 - **🔄 自我纠错**：具备运行时异常捕获机制。当代码报错时，Agent 会自动分析 Traceback 并重写代码（支持最大 3 次重试）。
 - **💾 多轮对话记忆**：支持上下文关联分析。
 
+## 🚀 运行指引 (Quick Start)
+
+请按照以下步骤配置并运行本项目。
+
+### 1. 基础环境
+* **Python**: 3.8+
+* **API Key**: 阿里云 DashScope (Qwen) 有效密钥
+
+### 2. 基础环境快速安装
+
+```bash
+# 创建并激活虚拟环境
+python -m venv venv
+
+# Linux/macOS 激活方式:
+source venv/bin/activate
+
+# Windows 激活方式:
+# venv\Scripts\activate
+
+# 安装项目依赖
+pip install -r requirements.txt
+```
+
+### 3. 配置密钥
+
+在项目根目录下新建 `.env` 文件，并填入你的 API 密钥：
+
+```ini
+# .env 文件内容
+DASHSCOPE_API_KEY=你的sk-密钥内容
+```
+
+### 4. 启动 Agent
+
+```bash
+python main.py
+```
+
+### 5. 交互规范
+
+* **输入需求**：在 `用户>` 提示符后输入自然语言指令（如：“对比 2016 年各品类的总销售额”）。
+* **查看过程**：Agent 将自动展示生成的代码及执行结果。
+* **退出程序**：输入 `exit` 或 `quit` 结束会话。
+
 ## 📂 项目结构
 
 ```text

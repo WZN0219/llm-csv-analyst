@@ -1,5 +1,3 @@
-# prompts.py
-
 def get_initial_prompt(df_head, df_info):
     """
     初始化提示词：引导模型进行“观察-清洗-验证”的思维链 (CoT)
@@ -69,4 +67,5 @@ def get_explanation_prompt(user_query, execution_output):
 请作为业务专家，用简洁的中文解读上述数据。
 - 重点关注趋势、异常值或对比结果。
 - 如果结果数据异常（如全为 0），请诚实地提示用户可能存在数据质量问题。
+- 即使结果集为空（Empty DataFrame），也要打印出原始的聚合数据，以便用户核实。
 """
